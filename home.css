@@ -1,0 +1,112 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    background-image: url('bg5.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+}
+header{
+    display: block;
+    width: 100%;
+    /* background-color: #333; */
+    position: fixed;
+    border-bottom: 1px solid rgba(255, 255, 255, .5);
+    
+}
+header .box_menu{
+    width: 70%;
+    margin: 0px auto;
+    display: flex;
+    justify-content: space-between;
+}
+img{
+    width: 70px;
+    height: 70px;
+    background-size: cover;
+}
+
+header .box_menu .list_menu{
+    list-style: none;
+}
+header .box_menu .list_menu>li{
+    float: left;
+    margin-right: 15px;
+    position: relative;
+}
+header .box_menu .list_menu li a{
+    color: #fff;
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+}
+.sub_menu{
+    margin: 0;
+    padding: 0;
+    width: 100px;
+    list-style: none;
+    margin-left: 20px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    position: absolute;
+    display: none;
+}
+header .box_menu>.list_menu>li:hover{
+    border-bottom: 2px solid #fff;
+}
+header .box_menu>.list_menu>li:hover>.sub_menu{
+    display: block;
+    /* background-color: aqua; */
+}
+.sub_menu li{
+    border-bottom: 1px solid #ffffff;
+}
+.sub_menu li:hover{
+    border-bottom: 3px solid #aeabab;
+}
+header .box_menu .list_menu>li ul.sub_menu li{
+    position: relative;
+}
+.box_menu .list_menu>li ul.sub_menu li .sub_menu{
+    margin: 0;
+    padding: 8px 15px;
+    width: 100px;
+    list-style: none;
+    position: absolute;
+    left: 100px;
+    top: 0px;
+    border: 1px solid rgba(255, 255, 255, .5);
+    margin-bottom: 50px;
+    display: none;
+}
+
+header .box_menu .list_menu>li ul.sub_menu li:hover>.sub_menu{
+    display: block;
+}
+.contact_link a{
+    display: block;
+    background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Ficonduck.com%2Ficons%2F196923%2Fmessage&psig=AOvVaw2kDMnAdk4Co22ZwGZ1LsVD&ust=1704812223675000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCPD5_MmGzoMDFQAAAAAdAAAAABAE');
+    background-size: cover;
+    /* width: 50px;
+    height: 50px;
+    background-color: #fff; */
+}
+
+
+/* article */
+
+article{
+    width: 80%;
+    margin: 0px auto;
+    /* position: absolute; */
+    top: 100px;
+    display: block;
+    justify-content: space-around;
+}
+.product_box{
+    width: 300px;
+    height: 400px;
+    background-color: #fff;
+    margin: 100px 50px;
+    float: left;
+}
